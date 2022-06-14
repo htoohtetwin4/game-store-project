@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap');
+
+*{
+    font-family: 'Courgette', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.gamehub{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(117,117,117,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.header{
+    background-color: black;
+    
+}
+.navbar {
+    margin-left: 10%;
+    margin-right: 8%;
+    padding-top: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand{
+    cursor: default;
+    top: 1px;
+    font-size: 70px;
+    justify-content: center;
+    margin-left: 450px;
+    position: absolute;
+    
+}
+.navbar-brand span{
+    color: rgb(107, 106, 106);
+}
+.navbar-brand span:hover{
+    color: white;
+    transition: 1s ease-in-out;
+}
+.header ul li a{
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.displaybox{
+    width: 1100px; 
+    height: 400px;
+}
+
+
+.head-container{
+    top: auto;
+    width: 990px;
+    height: 400px;
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    left: 13%;
+    color: white;
+    background-color: white;
+    border: 2px solid grey;
+    box-shadow: 0px 10px 10px rgb(133, 127, 127);
+}
+
+/* box*/
+.head-container .box {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.5s;
+}
+.head-container .box.box1 {
+    background: yellow;
+    clip-path: polygon(0 0, 33% 0, 33% 100%, 0% 100%);
+}
+.head-container .box.box2 {
+    background: green;
+    clip-path: polygon(33% 0, 67% 0, 67% 100%, 33% 100%);
+}
+.head-container .box.box3 {
+    background: red;
+    clip-path: polygon(67% 0, 100% 0, 100% 100%, 67% 100%);
+}
+.head-container .box.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.head-container .box:hover{
+    z-index: 1000;
+}
+.head-container .content{
+    padding: 20px;
+    margin: 20px;
+    z-index: 10;
+    opacity: 0;
+    transition: 1.5s;
+}
+.head-container .box.active .content{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.head-container .content h2{
+    color: #fff;
+    
+    font-size: 30px;
+    font-weight: initial;
+}
+
+.head-container .box video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+section div img{
+    width: 270px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+section div img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.438)
+}
+
+
+footer{
+    background-color: black;
+}
+/*social-link*/
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a{
+    font-size: 16px;
+    margin: 0px 3px;
+    
+}

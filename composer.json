@@ -1,0 +1,17 @@
+{
+    "name": "nec/gamestoreproject",
+    "authors": [
+        {
+            "name": "htoohtet"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "Libs\\": "_classes/Libs/",
+            "Helpers\\": "_classes/Helpers/"
+        }
+    }
+
+}
